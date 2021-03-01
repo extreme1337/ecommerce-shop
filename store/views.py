@@ -68,7 +68,7 @@ def processOrder(request):
         
 
     else:
-        customer, order = guestOrder(reqeuest, data)
+        customer, order = guestOrder(request, data)
 
     total = float(data['form']['total'])
     order.transaction_id = transaction_id
